@@ -1,0 +1,11 @@
+<h1>IrKat Cubs</h1>
+
+<ul>
+    <% @ir_kats.each do |irKat| %>
+        <li>
+            <strong> <%= irKat.name %> </strong> - <%= irKat.fur %>
+            - <%= link_to "Delete this IrKat cub!", irKat, method: :delete, data: { confirm: "Are you sure you want to delete this IrKat cub?"} %>
+            - <%= link_to "More info", ir_kats_path(irKat) %>
+        </li>
+    <% end %>
+</ul>

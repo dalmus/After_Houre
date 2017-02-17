@@ -1,0 +1,6 @@
+<h1> <%= @ir_kat.name %> </h1>
+
+<p>This IrKat cub, his fur level is <%= @ir_kat.fur %> and his opinion about ruby is <%= @ir_kat.likes_ruby %>, and from 1 to 100 he likes WDI <%= @ir_kat.quantity %>%.</p>
+
+<%= link_to "Back to the list!", ir_kats_path %>
+<%= link_to "Delete this IrKat cub!", :ir_kats, method: :delete, data: { confirm: "Are you sure you want to delete this IrKat cub?"} %>

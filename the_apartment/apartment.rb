@@ -15,7 +15,8 @@ def initialize unit, num_beds, num_baths
   end
   def empty?
     # @tenants.length
-    #   if @tenants.length == 0 true
+    #   if @tenants.length == 0
+    # true
     #   else false
     #   end
   end
